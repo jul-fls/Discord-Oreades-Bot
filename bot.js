@@ -11,7 +11,7 @@ client.on('ready', () => {
 client.on('message', msg => {
   if (msg.author.bot || !msg.content.includes('!code')) return;
   if(msg.channel.type == 'dm' && msg.content.includes(config.required_password_to_join)){
-    msg.reply("Mot de passe correct ! \n Vous avez maintenant accès à l'ensemble du serveur !");
+    msg.reply("Mot de passe correct ! \n Vous avez maintenant accès à l'ensemble du serveur !!");
     const guild = client.guilds.cache.get('777260195906060298');
     var dmUser = msg.author.id;
     var isMember = guild.members.cache.get(dmUser)
