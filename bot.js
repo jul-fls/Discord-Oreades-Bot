@@ -29,7 +29,7 @@ client.on('message', msg => {
 });
 
 client.on("guildMemberAdd", (member) => {
-  console.log(`Nouveau membre "${member.user.username}" a rejoint le serveur "${member.guild.name}"` );
-  client.channels.cache.get('777327600980066364').send(`"${member.user.username}" has joined this server`);
+  console.log(`Nouveau membre ${member.user.username} a rejoint le serveur "${member.guild.name}"` );
+  client.channels.cache.get('777327600980066364').send(`${member.user.username} a rejoint le serveur`);
   member.send('Quel est le mot de passe ?');
 });
